@@ -1,18 +1,17 @@
 <!DOCTYPE html>   
 <html lang="es">   
 <head>  
-  <title> iniciar sesion </title>  
+  <title> Iniciar sesion </title>  
   <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">  
   <link rel="stylesheet" href="css/style-index.css">
-  <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="./style.css">
 </head>         
 <body>
   <section class="forms-section">
   <h1 class="section-title">Nombre de la empresa</h1>
   <div class="forms">
+    <!-- Este es para formulario se puede duplicar, formulario de login-->
     <div class="form-wrapper is-active">
-      <button type="button" class="switcher switcher-login">
+      <button type="button" class="switcher switcher-login" >
         Iniciar sesion
         <span class="underline"></span>
       </button>
@@ -28,9 +27,10 @@
             <input id="login-password" type="password" required>
           </div>
         </fieldset>
-        <button type="submit" class="btn-login">Iniciar</button>
+        <button type="submit" class="btn-login" onclick="login()">Iniciar</button>
       </form>
     </div>
+    <!-- Este es para formulario se puede duplicar-->
     <div class="form-wrapper">
       <button type="button" class="switcher switcher-signup">
         Registrar
@@ -40,8 +40,12 @@
         <fieldset>
           <legend>Por favor ingrese su contraseña</legend>
           <div class="input-block">
-            <label for="signup-email">Usuario</label>
+            <label for="signup-email">Correo</label>
             <input id="signup-email" type="email" required>
+          </div>
+          <div class="input-block">
+            <label for="signup-Nombre">Nombre</label>
+            <input id="signup-Nombre" type="text" required>
           </div>
           <div class="input-block">
             <label for="signup-password">Contraseña</label>
@@ -52,7 +56,7 @@
             <input id="signup-password-confirm" type="password" required>
           </div>
         </fieldset>
-        <button type="submit" class="btn-signup">Registrar</button>
+        <button type="submit" class="btn-signup"  onclick="registrar()">Registrar</button>
       </form>
     </div>
   </div>

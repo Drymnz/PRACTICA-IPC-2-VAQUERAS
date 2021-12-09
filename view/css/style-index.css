@@ -1,6 +1,4 @@
 :root {
-
-
 	--color-letra-uno : brack; 
 	--color-letra-boton : back; 
 	--color-letra-boton-invertido : back;
@@ -21,40 +19,33 @@
 *, *::before, *::after {
 	box-sizing: border-box;
 }
-
 body {
 	margin: 0;
 	font-family: Roboto, -apple-system, 'Helvetica Neue', 'Segoe UI', Verdana, sans-serif;
 	background : var(--color-fondo);
 }
-
 .forms-section {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 }
-
 .section-title {
 	font-size: 32px;
 	letter-spacing: 1px;
 	color: var(--color-letra-uno);
 }
-
 .forms {
 	display: flex;
 	align-items: flex-start;
 	margin-top: 30px;
 }
-
 .form-wrapper {
 	animation: hideLayer .3s ease-out forwards;
 }
-
 .form-wrapper.is-active {
 	animation: showLayer .3s ease-in forwards;
 }
-
 @keyframes showLayer {
 	50% {
 		z-index: 1;
