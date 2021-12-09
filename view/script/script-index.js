@@ -18,6 +18,8 @@ function registrar(){
 	console.log(document.getElementById("signup-password-confirm").value);
 	if (!((document.getElementById("signup-password").value) === (document.getElementById("signup-password-confirm").value))) {
 		alert("las contraseña no son iguales");
+	}else{
+		console.log("si conside la contraseña");
 	}
 }
 function login(){
